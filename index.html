@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Personal data</legend>
+        <div>
+            <label for="username">Name:</label>
+            <input type="text" name="username" id="username" placeholder="Jacob" pattern="\w{2,20}" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" autocomplete="off" required>
+        </div>
+        <div>
+            <label for="visit-date">Visit date:</label>
+            <input type="date" name="visit-date" id="visit-date">
+            <label for="table">Table number:</label>
+            <input type="number" name="table" id="table" min="1" max="20" placeholder="1-20">
+        </div>
+        <label for="zone">Zone color:</label>
+        <input type="color" name="zone" id="zone" list="zone-color">
+        <datalist id="zone-color">
+            <option value="#FF0000"></option>
+            <option value="#00FF00"></option>
+            <option value="#0000FF"></option>
+        </datalist>
+    </fieldset>
+    <fieldset>
+        <legend>Review</legend>
+
+        <div>
+            <label for="rate">Rate:</label><br>
+            0<input type="range" name="rate" id="rate" min="1" max="10">10
+        </div>
+        <div>
+            <label for="fav-dish">Favourite dish:</label>
+            <select id="fav-dish">
+                <optgroup label="featured">
+                    <option>dish1</option>
+                    <option>dish2</option>
+                    <option>dish3</option>
+                </optgroup>
+                <optgroup label="Mediterranean">
+                    <option>dish4</option>
+                    <option>dish5</option>
+                    <option>dish6</option>
+                    <option>dish7</option>
+                </optgroup>
+            </select>
+        </div>
+        <label for="review-text">Review text:</label><br>
+        <textarea name="review-text" id="review-text" placeholder="Your review" spellcheck="false"></textarea>
+    </fieldset>
+    <div>
+        <label for="reply-speed">Reply speed:</label>
+        <progress id="reply-speed" max="100" value="90"></progress>
+        <label for="server-overflow">Server overflow:</label>
+        <meter id="server-overflow" min="0" max="100" low="30" optimum="50" high="80" value="25"></meter>
+    </div>
+    <input type="file" accept=".png,.jpg">
+    <input style="margin-top: 5px" type="submit">
+</form>
+</body>
+</html>
