@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>Логін:</td>
+            <td><input type="text" name="login"></td>
+        </tr>
+        <tr>
+            <td>Пароль:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Повторіть пароль:</td>
+            <td><input type="password" name="password-r"></td>
+        </tr>
+        <tr>
+            <td>Стать:</td>
+            <td>
+                <label>
+                    <input type="radio" name="sex">чоловік
+                </label>
+                <label>
+                    <input type="radio" name="sex">жінка
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Вкажіть місто:</td>
+            <td><select name="city-list" multiple>
+                <option value="1">Житомир</option>
+                <option value="2">Київ</option>
+                <option value="3">Львів</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Інтереси:</td>
+            <td>
+                <label>
+                    <input type="checkbox">футбол
+                </label>
+                <label>
+                    <input type="checkbox">шахи
+                </label>
+                <label>
+                    <input type="checkbox">малювання
+                </label>
+                <label>
+                    <input type="checkbox">музика
+                </label>
+
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="reset" value="Очисти">
+                <input type="submit" value="Відправити">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
